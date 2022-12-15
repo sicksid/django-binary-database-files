@@ -1,4 +1,4 @@
-VERSION = (1, 0, 19)
+VERSION = (1, 0, 20)
 __version__ = ".".join(map(str, VERSION))
 
 default_app_config = "binary_database_files.apps.DatabaseFilesAppConfig"
