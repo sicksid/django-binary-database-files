@@ -8,7 +8,9 @@ import binary_database_files
 CURRENT_DIR = os.path.abspath(os.path.dirname(__file__))
 DESCRIPTION = (
     "A storage system for Django that stores uploaded files in both the "
-    "database and file system."
+    "database and file system.",
+    "Sorry, copied this for now to make compatible with django 4.1 and pdm (pdm is a python package manager).",
+    "and python 3.11, currently i cant install without this",
 )
 
 
@@ -30,14 +32,14 @@ except FileNotFoundError:
     long_description = DESCRIPTION
 
 setup(
-    name="django-binary-database-files",
+    name="sicksid-django-binary-database-files",
     version=binary_database_files.__version__,
     description=DESCRIPTION,
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="Roger Hunwicks",
     author_email="roger@tonic-solutions.com",
-    url="https://github.com/kimetrica/django-binary-database-files/",
+    url="https://github.com/sicksid/django-binary-database-files/",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 6 - Mature",
@@ -51,11 +53,13 @@ setup(
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
         "Framework :: Django :: 2.2",
         "Framework :: Django :: 3.0",
         "Framework :: Django :: 3.1",
         "Framework :: Django :: 3.2",
         "Framework :: Django :: 4.0",
+        "Framework :: Django :: 4.1",
     ],
     install_requires=get_reqs(
         "pip-requirements.txt",
